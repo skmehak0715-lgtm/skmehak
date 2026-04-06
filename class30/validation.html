@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vlidation</title>
+</head>
+<body>
+    <form id="myform" onsubmit="vlidation();">
+        name <input type="text" id="name"><br><br>
+        <input type="submit">
+    </form>
+    <script>
+        function vlidation(){
+            var x = document.forms["myform"]["name"].value
+            if (x == "")
+        {
+            alert("name must be filled out")
+        }
+    }
+    </script>
+</body>
+</html>
